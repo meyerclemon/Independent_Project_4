@@ -12,43 +12,37 @@ PizzaOrder.prototype.addSize = function(size) {
 if (this.size == small){
   this.total = 10;
   return this.total;
-}else if(this.size == medium){
+}
+  else if(this.size == medium ){
   var total = 15;
   return total;
-}else if(this.size == large) {
+}
+  else if(this.size == large) {
   var total = 20;
 }
 };
+
+var totalPizza = function (object) {
+  $("total").val(object.total);
+  $("toppings").val(object.toppings);
+  $("size").val(object.size);
+}
 // Front
 $(document).ready(function(){
-  $("form#send-order").click(function(event){
-    var size=$("#size");
-    var topping=$("#toppings");
-    var pizza = new PizzaOrder(size,topping);
-    pizza.addSize(size);
+  $("form#pizza-order").click(function(event){
+    event.preventDefault();
+    var size =  $("input:radio[name=size]:checked").val();
+    var toppings = $("input:checkbox[name=toppings]:checked").each(function() {
+      toppings += 2;
+      toppings.push($(this).val());
+    });
+    var total = 0;
+    var newPizza = new PizzaOrder(size,topping,total);
+    newPizza.addSize(size);
+    newPizza.toppings
+    newPizza.total
 
-var toppingsPrice = 0;
-  $("input:checkbox[name=toppings]:checked").each(function() {
-    toppingsCounter += 2;
-  })
-var sizePrice =  $("input:radio[name=size]:checked").val();
-}
 
-};
-    var topping=$("#toppings");
-    var pizza = new PizzaOrder(size,topping);
-    pizza.addSize(size);
-
-  $("input:checkbox[name=toppings]:checked").each(function() {
-    toppings += 2;
-    toppings.push($(this).val());
-  });
-var sizePrice =  $("input:radio[name=size]:checked").val();
-}
-var totalPizza=0;
-    var totalPizza = new PizzaOrder (size,toppings,total);
-    thePizza.sizeCheck();
-    thePizza.priceCheck();
-    $("#outPut").text("Your total is"+" $"+PizzaOrder);
+    $("#output").text("Your total is: $" + newPizza.totalPizza);
 });
 });
