@@ -15,22 +15,23 @@ Pie size, sauce type, and toppings.
 | :-------------     | :------------- | :------------- |
 | **Create radio buttons for pie size** | User input: Select | Small, Medium, or Large |
 | **Create radio buttons for sauce type** | User input: Select | Output: Red, White, or Olive oil |
-| **Create checklist for array of toppings**| User Input: Check unlimited number of boxes | Output: All preferred toppings from list  |
-| **Assign value to options for pie size and toppings**| Input: All selections | Output: Itemized list of  |
-| **Rolling a 1 returns 0 and ends turn; score becomes 0 for that turn ONLY** | Input: "1" (on click) | Output: "0" "alert: Your turn is over and you are awarded no points" |
-| **Round ends when one user wins by totaling 100 points **| Input: "100" | Page Displays alert: "YOU WIN!"  |
+| **Create checklist for array of toppings**| User Input: Check unlimited number of boxes for preferred toppings | Output: All selected toppings from list  |
+| **Assign value to options for pie size and toppings**| Input: All selections | Output: All values |
+| ** Calculate total value of selections** | Input: All values  | Output: Order total |
+| **Submit order for receipt**| Input "Submit" | Output: Itemized order list |
 
 ## Setup/Installation Requirements
 
 1. Open browser
-2. Navigate to https://meyerclemon.github.io/pig_dice/.
+2. Navigate to https://meyerclemon.github.io/Independent_Project_4  /.
 3. Enjoy!
 
 ## Known Bugs
 * No known bugs at this time.
 
 ## Technologies Used
-* JavaScript
+  * JavaScript
+  * jQuery
   * CSS
   * HTML
 ## Support and contact details
@@ -41,7 +42,9 @@ _Email no one with any questions, comments, or concerns._
 
 *{This software is licensed under the MIT license}*
 
-Copyright (c) 2019 **_{Maya Frame, Marguerite Kennedy}_**OrderPizza object
+Copyright (c) 2019 **_{Maya Frame}_**
+
+OrderPizza object
   PieOne
   .pie size
     .small
