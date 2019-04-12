@@ -4,49 +4,35 @@ function PizzaOrder(total, options, size) {
   this.size =size;
 }
 
-PizzaOrder.prototype.calculateTotal = function(total) {
-  size = sizePrice;
-  toppings = [];
-}
-
 PizzaOrder.prototype.addSize = function(size) {
 if (this.size == small){
   this.total = 10;
   return this.total;
 }else if(this.size == medium){
-  var price = 15;
-  return price;
+  var total = 15;
+  return total;
 }else if(this.size == large) {
-  var price = 20;
-}
-
-}
-
-PizzaOrder.prototype.addToppings = function() {
-
-}
-
-
+  var total = 20;
 }
 };
 // Front
 $(document).ready(function(){
   $("form#send-order").click(function(event){
     var size=$("#size");
-    var topping=$("#option");
+    var topping=$("#toppings");
     var pizza = new PizzaOrder(size,topping);
     pizza.addSize(size);
 
-
-
-var toppingsPrice = 0;
   $("input:checkbox[name=toppings]:checked").each(function() {
-    toppingsCounter += 2;
-  })
+    toppings += 2;
+    toppings.push($(this).val());
+  });
 var sizePrice =  $("input:radio[name=size]:checked").val();
-
-var sauce = $("#sauce").val();
 }
-
-};
+var totalPizza=0;
+    var totalPizza = new PizzaOrder (size,toppings,total);
+    thePizza.sizeCheck();
+    thePizza.priceCheck();
+    $("#outPut").text("Your total is"+" $"+PizzaOrder);
+});
 });
