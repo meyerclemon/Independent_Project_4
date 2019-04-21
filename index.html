@@ -9,32 +9,57 @@
   </head>
 
   <body>
-    <div class="jumbotron">
-      <h2>CASCADIA PIZZA CO</h2>
-    </div>
-      <h4><u>Build your pizza</u></h4><br>
-<!-- Size -->
-  <form id="pizza-order">
+    <div class="container">
+      <div class="jumbotron">
+        <h2>WEIRD PIZZA CO</h2>
+      </div>
+        <h4><strong>Build your pizza:</strong></h4><br>
+  <!-- Size -->
+    <form id="pizza-order">
+      <div class="row">
+        <div class="col-md-6">
+            <select class="form-control" id="size">
+              <option name="size" value="default">Choose a size</option>
+              <option name="size" value="small">Small: $10</option>
+              <option name="size" value="medium">Medium: $15</option>
+              <option name="size" value="large">Large: $20</option>
+            </select>
 
-      <label for="choose-size">Choose a size:</label><br>
-        <input type="radio" name="size" value="small"> Small<br>
-        <input type="radio" name="size" value="medium"> Medium<br>
-        <input type="radio" name="size" value="large"> Large<br><br>
-<!-- Toppings -->
-      <label for="choose-toppings">Choose toppings:</label><br>
-        <input type="checkbox" name="toppings" value="anchovies"> Anchovies <br>
-        <input type="checkbox" name="toppings" value="pineapple"> Pineapple <br>
-        <input type="checkbox" name="toppings" value="clams"> Clams <br>
-        <input type="checkbox" name="toppings" value="spam"> Spam <br>
-        <input type="checkbox" name="toppings" value="corn"> Corn <br>
-        <input type="checkbox" name="toppings" value="mayo"> Mayonnaise<br><br>
-<!-- button -->
-      <button type="button" name="button">Send Order</button>
-<!-- output -->
-        <p><span id="output"></span></p>
-    </form>
-<!-- footer -->
-    <footer class="text-danger">"Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness." </footer>
+  <!-- Toppings -->
+      <div id="toppings">
+        <h5><strong>Add Toppings - $2/each</strong></h5>
+            <div class="form-group">
+              <input type="checkbox" name="topping" value="anchovies"> Anchovies <br>
+              <input type="checkbox" name="topping" value="pineapple"> Pineapple <br>
+              <input type="checkbox" name="topping" value="clams"> Clams <br>
+              <input type="checkbox" name="topping" value="spam"> Spam <br>
+              <input type="checkbox" name="topping" value="corn"> Mayonnaise <br>
+            </div>
+          </div>
+        </div>
+  <!-- button -->
+      <div class="col-md-2">
+        <button class="btn btn-success" type="submit">Send Order</button>
+        <div class="total">
+              <div class="panel panel info">
+                <div class="panel-heading">
+                  <p><strong> <span id="orderTotal">$0</span></strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+  <!-- output -->
+
+
+  <!-- footer -->
+  <div class="row">
+    <div class="col-md-12">
+      <footer class="text-danger">"Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness." </footer>
+    </div>
+  </div>
+</div>
 
   </body>
 </html>
