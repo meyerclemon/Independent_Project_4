@@ -18,7 +18,7 @@ PizzaOrder.prototype.addSize = function() {
     alert("Please select a size.");
   }
   for (var i = 0; i < this.toppings.length; i++) {
-    this.price = this.price + 2;
+    this.price = this.price + 1;
   }
 }
 
