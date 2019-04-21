@@ -43,27 +43,3 @@ _Email no one with any questions, comments, or concerns._
 *{This software is licensed under the MIT license}*
 
 Copyright (c) 2019 **_{Maya Frame}_**
-
-OrderPizza object
-  PieOne
-  .pie size
-    .small
-    .medium
-    .large
-
-  .sauce type
-    .red
-    .white
-
-  .toppings
-    .anchovies
-    .artichoke hearts
-    .Japanese mayonnaise
-    .corn
-    .bean sprouts
-
-  PiePrice
-    .pie-size - sm, md, lg
-    .toppings-price - toppings*$2
-    .delivery - $5
-    .tip%
