@@ -9,39 +9,57 @@
   </head>
 
   <body>
-    <div class="jumbotron">
-      <h2>CASCADIA PIZZA CO</h2>
-    </div>
-      <h4><u>Build your pizza</u></h4><br>
-<!-- Size -->
-  <form id="pizza-order">
+    <div class="container">
+      <div class="jumbotron">
+        <h2>WEIRD PIZZA CO</h2>
+      </div>
+        <h4><strong>Build your pizza:</strong></h4><br>
+  <!-- Size -->
+    <form id="pizza-order">
+      <div class="row">
+        <div class="col-md-6">
+            <select class="form-control" id="size">
+              <option name="size" value="default">Choose a size</option>
+              <option name="size" value="small">Small: $10</option>
+              <option name="size" value="medium">Medium: $15</option>
+              <option name="size" value="large">Large: $20</option>
+            </select>
 
-      <label for="choose-size">Choose a size:</label><br>
-      <form name="chooseSize">
-        <input type="radio" name="size" value="10"> Small<br>
-        <input type="radio" name="size" value="15"> Medium<br>
-        <input type="radio" name="size" value="20"> Large<br><br>
+  <!-- Toppings -->
+      <div id="toppings">
+        <h5><strong>Add Toppings - $2/each</strong></h5>
+            <div class="form-group">
+              <input type="checkbox" name="topping" value="anchovies"> Anchovies <br>
+              <input type="checkbox" name="topping" value="pineapple"> Pineapple <br>
+              <input type="checkbox" name="topping" value="clams"> Clams <br>
+              <input type="checkbox" name="topping" value="spam"> Spam <br>
+              <input type="checkbox" name="topping" value="corn"> Mayonnaise <br>
+            </div>
+          </div>
+        </div>
+  <!-- button -->
+      <div class="col-md-2">
+        <button class="btn btn-success" type="submit">Send Order</button>
+        <div class="total">
+              <div class="panel panel info">
+                <div class="panel-heading">
+                  <p><strong> <span id="orderTotal">$0</span></strong></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
+  <!-- output -->
 
-<!-- Toppings -->
-      <label for="choose-toppings">Choose toppings:</label><br>
-      <form name="chooseToppings">
-        <input type="checkbox" name="toppings" value="2"> Anchovies <br>
-        <input type="checkbox" name="toppings" value="2"> Pineapple <br>
-        <input type="checkbox" name="toppings" value="2"> Clams <br>
-        <input type="checkbox" name="toppings" value="2"> Spam <br>
-        <input type="checkbox" name="toppings" value="2"> Corn <br>
-        <input type="checkbox" name="toppings" value="2"> Mayonnaise<br><br>
-      </form>
-<!-- button -->
-      <button id="send-order" type="button" name="button">Send Order</button>
-    </form>
-<!-- output -->
-    <div id="output">
 
+  <!-- footer -->
+  <div class="row">
+    <div class="col-md-12">
+      <footer class="text-danger">"Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness." </footer>
     </div>
-<!-- footer -->
-    <footer class="text-danger">"Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness." </footer>
+  </div>
+</div>
 
   </body>
 </html>
