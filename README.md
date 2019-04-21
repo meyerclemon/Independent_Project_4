@@ -14,7 +14,6 @@ Pie size, sauce type, and toppings.
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **Create radio buttons for pie size** | User input: Select | Small, Medium, or Large |
-| **Create radio buttons for sauce type** | User input: Select | Output: Red, White, or Olive oil |
 | **Create checklist for array of toppings**| User Input: Check unlimited number of boxes for preferred toppings | Output: All selected toppings from list  |
 | **Assign value to options for pie size and toppings**| Input: All selections | Output: All values |
 | ** Calculate total value of selections** | Input: All values  | Output: Order total |
