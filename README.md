@@ -18,7 +18,7 @@ Pie size, sauce type, and toppings.
 | **Create checklist for array of toppings**| User Input: Check unlimited number of boxes for preferred toppings | Output: All selected toppings from list  |
 | **Assign value to options for pie size and toppings**| Input: All selections | Output: All values |
 | ** Calculate total value of selections** | Input: All values  | Output: Order total |
-| **Submit order for receipt**| Input "Submit" | Output: Itemized order list |
+| **Submit order for receipt**| Input "Submit" | Output: Total cost of all selections |
 
 ## Setup/Installation Requirements
 
