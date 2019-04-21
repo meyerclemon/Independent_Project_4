@@ -31,8 +31,6 @@ $(document).ready(function() {
       toppingsArray.push($(this).val());
     })
     var newOrder = new PizzaOrder(pieSize);
-//toppings
-    var toppingsArray = [];
     $('input[type=checkbox]:checked').each(function() {
       toppingsArray.push($(this).val());
     })
